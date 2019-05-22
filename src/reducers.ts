@@ -28,7 +28,7 @@ export function rootReducer( state = initialState, action: ActionType ): PersonS
     }
     else if ( action.type === ADD_PERSON ) {
 
-        persons.push( action.person );
+        persons = [ ...persons, action.person ];
 
         return {
 

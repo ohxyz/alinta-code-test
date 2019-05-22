@@ -178,6 +178,7 @@ export class DataTable extends React.Component<DataTableProps, DataTableState> {
 
             this.person.id = Math.random().toString();
             this.props.addPerson( this.person );
+
             this.setState( { 
 
                 shouldAddRow: false
